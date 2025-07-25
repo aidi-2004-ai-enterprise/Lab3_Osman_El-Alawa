@@ -1,0 +1,26 @@
+[LAB #3]
+name = "penguin-species-prediction"
+version = "0.1.0"
+description = "A FastAPI application to predict penguin species using an XGBoost model."
+authors = [{ name = "Osman El-Alawa", email = "elalawaosman@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",  # For future test enhancements
+]
+
+[project.dependencies]
+seaborn = "^0.12.2"
+pandas = "^2.0.0"
+scikit-learn = "^1.4.0"
+xgboost = "^2.0.0"
+fastapi = "^0.100.0"
+uvicorn = "^0.23.0"
+joblib = "^1.3.0"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
